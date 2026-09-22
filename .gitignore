@@ -9,3 +9,5 @@
 *.lprof
 *.tmp
 
+venv/
+Miniforge3-Linux-x86_64.sh
