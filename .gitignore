@@ -9,3 +9,8 @@
 *.lprof
 *.tmp
 
+venv/
+Miniforge3-Linux-x86_64.sh
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
