@@ -1,3 +1,5 @@
 {
-    "cmake.sourceDirectory": "/Users/javiermoya/Github/python-for-hpc-exercises/examples/nanobind"
+    "cmake.sourceDirectory": "/Users/javiermoya/Github/python-for-hpc-exercises/examples/nanobind",
+    "python-envs.defaultEnvManager": "ms-python.python:conda",
+    "python-envs.defaultPackageManager": "ms-python.python:conda"
 }
