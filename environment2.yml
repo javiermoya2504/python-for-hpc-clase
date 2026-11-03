@@ -1,46 +1,15 @@
-# Alternative environment file for macOS / Windows users.
-#
-# environment.yml pins gcc_linux-64 / gxx_linux-64 / gfortran_linux-64, which
-# are compiler packages built ONLY for Linux and will fail to install on
-# macOS or native Windows. This file replaces them with conda-forge's
-# generic "compilers" metapackage, which picks the right compiler for
-# whatever platform you are on (clang on macOS, gcc on Linux, MSVC-based
-# toolchain on Windows).
-#
-# Use this file if `conda env create --file environment.yml` fails while
-# installing gcc_linux-64 / gxx_linux-64 / gfortran_linux-64.
 name: pyhpc
 channels:
   - conda-forge
   - nodefaults
 dependencies:
-  # Note: nbclassic (notebook<7) and RISE require python<=3.11 for now.
-  # In case the RISE presentation mode is not necessary, newer Python
-  # versions can be used and the last three lines of the present file
-  # can be commented or removed.
   - python=3.11
-  - pip
-  - libopenblas=*=*openmp*
   - numpy
   - scipy
-  - pooch
-  - cython
-  - pybind11
-  - pandas
   - matplotlib
-  - line_profiler
-  - compilers
   - numba
-  - jax
   - dask
-  - graphviz
-  - python-graphviz
-  - mpich
+  - h5py
   - mpi4py
-  - hdf5=*=mpi*
-  - h5py=*=mpi*
   - jupyterlab
-  # Required for RISE presentation mode from nbclassic:
-  - notebook<7
-  - pip:
-    - RISE
+  - compilers
