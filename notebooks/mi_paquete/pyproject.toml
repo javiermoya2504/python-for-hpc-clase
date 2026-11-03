@@ -1,0 +1,11 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "mi_paquete"
+version = "0.1"
+description = "Paquete de Python creado para la actividad de Ingenieria de Software"
+authors = [
+  {name = "Daniela Sanchez Garcia"}
+]
